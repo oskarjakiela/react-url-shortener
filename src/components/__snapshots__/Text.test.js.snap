@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> renders correctly 1`] = `
+<span
+  className="Text Text--primary"
+>
+  Lorem ipsum
+</span>
+`;
+
+exports[`<Text primary /> renders correctly 1`] = `
+<span
+  className="Text Text--primary"
+>
+  Lorem ipsum
+</span>
+`;
+
+exports[`<Text secondary /> renders correctly 1`] = `
+<span
+  className="Text Text--secondary"
+>
+  Lorem ipsum
+</span>
+`;
+
+exports[`<Text unimportant /> renders correctly 1`] = `
+<span
+  className="Text Text--unimportant"
+>
+  Lorem ipsum
+</span>
+`;
