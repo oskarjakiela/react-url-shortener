@@ -2,7 +2,7 @@
 
 exports[`<Text /> renders correctly 1`] = `
 <span
-  className="Text Text--primary"
+  className="Shorty-Text Shorty-Text--primary"
 >
   Lorem ipsum
 </span>
@@ -10,7 +10,7 @@ exports[`<Text /> renders correctly 1`] = `
 
 exports[`<Text primary /> renders correctly 1`] = `
 <span
-  className="Text Text--primary"
+  className="Shorty-Text Shorty-Text--primary"
 >
   Lorem ipsum
 </span>
@@ -18,7 +18,7 @@ exports[`<Text primary /> renders correctly 1`] = `
 
 exports[`<Text secondary /> renders correctly 1`] = `
 <span
-  className="Text Text--secondary"
+  className="Shorty-Text Shorty-Text--secondary"
 >
   Lorem ipsum
 </span>
@@ -26,7 +26,7 @@ exports[`<Text secondary /> renders correctly 1`] = `
 
 exports[`<Text unimportant /> renders correctly 1`] = `
 <span
-  className="Text Text--unimportant"
+  className="Shorty-Text Shorty-Text--unimportant"
 >
   Lorem ipsum
 </span>
