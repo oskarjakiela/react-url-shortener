@@ -1,0 +1,29 @@
+{
+  "name": "react-url-shortener",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
+  "engines": {
+    "node": "~9.5.0",
+    "npm": "~5.6.0"
+  },
+  "homepage": "https://react-url-shortener.herokuapp.com",
+  "proxy": {
+    "/api": {
+      "target": "http://react-url-shortener.herokuapp.com",
+      "pathRewrite": {
+        "^/api": "/"
+      }
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
