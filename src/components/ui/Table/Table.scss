@@ -1,0 +1,23 @@
+.Shorty-Table {
+  td,
+  th {
+    padding: .5rem;
+    text-align: center;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  th {
+    font-size: .875rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #aaa;
+    white-space: nowrap;
+  }
+}

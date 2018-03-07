@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Table /> renders correctly 1`] = `
+<table
+  className="Shorty-Table"
+>
+  <thead>
+    <tr>
+      <th>
+        Foo
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <span>
+          Bar
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
