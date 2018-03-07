@@ -1,0 +1,16 @@
+.Shorty-ShortenForm {
+  display: flex;
+  margin: 0 -.5rem;
+  justify-content: space-between;
+
+  > * {
+    margin: 0 .5rem;
+  }
+}
+
+.Shorty-ShortenForm__input {
+  flex: 1;
+}
+
+.Shorty-ShortenForm__button {
+}

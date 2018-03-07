@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 
 import './App.css';
+import { ShortenForm } from 'components/containers';
 import { Header, Main } from 'components/layout';
-import { Text } from 'components/ui';
 
-
-const { REACT_APP_API_URL } = process.env;
 
 class App extends Component {
   render() {
@@ -14,9 +12,7 @@ class App extends Component {
         <Header />
 
         <Main>
-          <Text>
-            {REACT_APP_API_URL}
-          </Text>
+          <ShortenForm />
         </Main>
       </div>
     );
