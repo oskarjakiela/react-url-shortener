@@ -1,0 +1,13 @@
+.Shorty-ShortcodesHeader {
+  display: flex;
+  margin: 0 -.5rem;
+  align-items: flex-end;
+
+  > * {
+    margin: 0 .5rem;
+  }
+}
+
+.Shorty-ShortcodesHeader__link {
+  padding-bottom: .0625rem;
+}
