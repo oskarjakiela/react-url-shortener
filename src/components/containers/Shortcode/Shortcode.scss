@@ -3,12 +3,12 @@
 
   &:hover {
     .Shorty-Shortcode__copy-link {
-      display: inline-block;
+      visibility: visible;
     }
   }
 
-  .Shorty-Shortcode__copy-link {
-    display: none;
+  &__copy-link {
+    visibility: hidden;
   }
   
   &__url {
@@ -24,6 +24,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    text-decoration: none;
     color: #555;
   }
 

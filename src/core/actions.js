@@ -1,3 +1,5 @@
+import copy from 'copy-to-clipboard';
+
 import {
   getShortcode,
   getShortcodeStats,
@@ -12,6 +14,7 @@ export const SHORTCODE_FETCH_SUCCESS = 'SHORTCODE_FETCH_SUCCESS';
 export const SHORTCODE_STAT_FETCH_START = 'SHORTCODE_STAT_FETCH_START';
 export const SHORTCODE_STAT_FETCH_SUCCESS = 'SHORTCODE_STAT_FETCH_SUCCESS';
 
+export const SHORTCODE_COPY = 'SHORTCODE_COPY';
 export const SHORTCODES_CLEAR = 'SHORTCODES_CLEAR';
 export const NEW_URL_CHANGE = 'NEW_URL_CHANGE';
 
@@ -94,6 +97,15 @@ export function changeNewUrl(newUrl) {
     type: NEW_URL_CHANGE,
     payload: { newUrl },
   };
+}
+
+export function copyShortcode(shortcode, link) {
+  copy(link);
+
+  return {
+    type: SHORTCODE_COPY,
+    payload: { shortcode },
+  }
 }
 
 export function clearShortcodes() {

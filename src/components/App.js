@@ -12,6 +12,7 @@ import { Header, Main } from 'components/layout';
 import {
   changeNewUrl,
   clearShortcodes,
+  copyShortcode,
   createShortcode,
 } from 'core/actions';
 
@@ -41,6 +42,7 @@ class App extends Component {
           {isEmpty ? null : (
             <ShortcodesTable
               items={items}
+              onCopyItem={(shortcode, link) => { dispatch(copyShortcode(shortcode, link)); }}
             />
           )}
         </Main>

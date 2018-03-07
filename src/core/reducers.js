@@ -2,6 +2,7 @@ import { map } from 'ramda'
 import { combineReducers } from 'redux'
 
 import {
+  SHORTCODE_COPY,
   SHORTCODE_CREATE_SUCCESS,
   SHORTCODE_STAT_FETCH_SUCCESS,
   SHORTCODES_CLEAR,
@@ -38,6 +39,17 @@ function shortcodes(
           }
 
           return item;
+        }, state.items),
+      };
+
+    case SHORTCODE_COPY:
+      return {
+        ...state,
+        items: map((item) => {
+          return {
+            copied: item.shortcode === payload.shortcode,
+            ...item,
+          };
         }, state.items),
       };
 

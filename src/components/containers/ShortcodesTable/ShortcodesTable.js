@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { map } from 'ramda';
 import React from 'react';
 import timeago from 'timeago.js';
@@ -11,7 +12,8 @@ const displayName = 'Shorty-ShortcodesTable';
 
 const headers = ['Link', 'Visits', 'Last Visited'];
 
-const mapItemsToRows = (items) => map(({
+const mapItemsToRows = (items, onCopy) => map(({
+  copied = false,
   lastSeenDate,
   redirectCount = 0,
   shortcode,
@@ -19,23 +21,33 @@ const mapItemsToRows = (items) => map(({
 }) => {
   return [
     <Shortcode
+      copied={copied}
       value={shortcode}
       url={url}
+      onCopy={onCopy}
     />,
     <Text>{redirectCount}</Text>,
     <Text>{timeago().format(lastSeenDate)}</Text>,
   ];
 }, items);
 
-const ShortcodesTable = ({ items }) => (
+const ShortcodesTable = ({
+  items,
+  onCopyItem
+}) => (
   <div className={displayName}>
     <Table
       headers={headers}
-      rows={mapItemsToRows(items)}
+      rows={mapItemsToRows(items, onCopyItem)}
     />
   </div>
 );
 
 ShortcodesTable.displayName = displayName;
+
+ShortcodesTable.propTypes = {
+  items: PropTypes.array.isRequired,
+  onCopyItem: PropTypes.func.isRequired,
+};
 
 export default ShortcodesTable;
