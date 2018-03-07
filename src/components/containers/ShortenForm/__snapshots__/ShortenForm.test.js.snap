@@ -5,7 +5,7 @@ exports[`<ShortenForm /> renders correctly 1`] = `
   className="Shorty-ShortenForm"
 >
   <input
-    className="Shorty-Input Shorty-ShortenForm'__input"
+    className="Shorty-Input Shorty-ShortenForm__input"
     placeholder="Paste the link you want to shorten here"
   />
   <button

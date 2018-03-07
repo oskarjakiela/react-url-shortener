@@ -9,7 +9,7 @@ const displayName = 'Shorty-ShortenForm';
 const ShortenForm = () => (
   <form className={displayName}>
     <Input
-      className={`${displayName}'__input`}
+      className={`${displayName}__input`}
       placeholder="Paste the link you want to shorten here"
     />
 
