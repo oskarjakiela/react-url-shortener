@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> renders correctly 1`] = `
+<h2
+  className="Shorty-Heading"
+>
+  Lorem ipsum
+</h2>
+`;
+
+exports[`<Heading className="foo-bar" /> renders correctly 1`] = `
+<h2
+  className="Shorty-Heading foo-bar"
+>
+  Lorem ipsum
+</h2>
+`;
+
+exports[`<Heading id="foo-bar" /> renders correctly 1`] = `
+<h2
+  className="Shorty-Heading"
+  id="foo-bar"
+>
+  Lorem ipsum
+</h2>
+`;
