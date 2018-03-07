@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import './Shortcode.css';
@@ -5,16 +6,16 @@ import { Link, Text } from 'components/ui';
 
 
 const displayName = 'Shorty-Shortcode';
-const domain = 'shooooort.com/';
 
 const Shortcode = ({
+  domain,
   url,
   value,
 }) => (
   <div className={displayName}>
     <span className={`${displayName}__url-body`}>
       <span className={`${displayName}__domain`}>
-        {domain}
+        {`${domain}/`}
       </span>
 
       <span className={`${displayName}__value`}>
@@ -35,5 +36,15 @@ const Shortcode = ({
 );
 
 Shortcode.displayName = displayName;
+
+Shortcode.defaultProps = {
+  domain: 'shooooort.com',
+};
+
+Shortcode.propTypes = {
+  domain: PropTypes.string,
+  url: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+};
 
 export default Shortcode;
