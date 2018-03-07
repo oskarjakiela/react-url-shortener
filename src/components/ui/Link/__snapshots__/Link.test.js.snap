@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link /> renders correctly 1`] = `
+<a
+  className="Shorty-Link"
+>
+  Lorem ipsum
+</a>
+`;
+
+exports[`<Link className="foo-bar" /> renders correctly 1`] = `
+<a
+  className="Shorty-Link foo-bar"
+>
+  Lorem ipsum
+</a>
+`;
+
+exports[`<Link href="foo-bar" /> renders correctly 1`] = `
+<a
+  className="Shorty-Link"
+  href="/"
+>
+  Lorem ipsum
+</a>
+`;
