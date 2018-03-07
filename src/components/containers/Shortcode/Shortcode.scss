@@ -1,0 +1,35 @@
+.Shorty-Shortcode {
+  line-height: 1.6875rem;
+
+  &:hover {
+    .Shorty-Shortcode__copy-link {
+      display: inline-block;
+    }
+  }
+
+  .Shorty-Shortcode__copy-link {
+    display: none;
+  }
+  
+  &__url {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__url-body {
+    margin-right: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  &__value {
+    color: #eb4a42;
+  }
+}
+
+

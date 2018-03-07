@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Shortcode /> renders correctly 1`] = `
+<div
+  className="Shorty-Shortcode"
+>
+  <span
+    className="Shorty-Shortcode__url-body"
+  >
+    <span
+      className="Shorty-Shortcode__domain"
+    >
+      shooooort.com/
+    </span>
+    <span
+      className="Shorty-Shortcode__value"
+    >
+      f00ba4
+    </span>
+  </span>
+  <a
+    className="Shorty-Link Shorty-Shortcode__copy-link"
+  >
+    Click to copy this link
+  </a>
+  <br />
+  <span
+    className="Shorty-Text Shorty-Text--unimportant Shorty-Shortcode__url"
+  >
+    https://example.com
+  </span>
+</div>
+`;
