@@ -1,0 +1,14 @@
+ .Shorty-ShortcodesTable {
+  .Shorty-Table {
+    td,
+    th {
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+
+  .Shorty-Shortcode {
+    max-width: 26rem;
+  }
+}

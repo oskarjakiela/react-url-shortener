@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShortcodesTable /> renders correctly 1`] = `
+<div
+  className="Shorty-ShortcodesTable"
+>
+  <table
+    className="Shorty-Table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Link
+        </th>
+        <th>
+          Visits
+        </th>
+        <th>
+          Last Visited
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div
+            className="Shorty-Shortcode"
+          >
+            <span
+              className="Shorty-Shortcode__url-body"
+            >
+              <span
+                className="Shorty-Shortcode__domain"
+              >
+                shooooort.com/
+              </span>
+              <span
+                className="Shorty-Shortcode__value"
+              >
+                fca1ec3fe
+              </span>
+            </span>
+            <a
+              className="Shorty-Link Shorty-Shortcode__copy-link"
+            >
+              Click to copy this link
+            </a>
+            <br />
+            <span
+              className="Shorty-Text Shorty-Text--unimportant Shorty-Shortcode__url"
+            >
+              https://jlongster.com/Radical-Statements-about-the-Mobile-Web
+            </span>
+          </div>
+        </td>
+        <td>
+          <span
+            className="Shorty-Text Shorty-Text--primary"
+          >
+            1140
+          </span>
+        </td>
+        <td>
+          <span
+            className="Shorty-Text Shorty-Text--primary"
+          >
+            2 days ago
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
