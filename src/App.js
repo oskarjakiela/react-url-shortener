@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Text from './components/Text';
+
 
 
 const { REACT_APP_API_URL } = process.env;
@@ -9,21 +11,14 @@ const { REACT_APP_API_URL } = process.env;
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+      <div className="Shorty-App">
+        <Header />
 
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <p className="App-api-url">
-          <code>
+        <main className="Shorty-Main">
+          <Text>
             {REACT_APP_API_URL}
-          </code>
-        </p>
+          </Text>
+        </main>
       </div>
     );
   }

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders correctly 1`] = `
+<header
+  className="Shorty-Header"
+>
+  <h1
+    className="Shorty-Logo Shorty-Header__logo"
+  >
+    <a
+      href="/"
+      title="Shooooort Logo"
+    >
+      Shooooort
+    </a>
+  </h1>
+  <span
+    className="Shorty-Text Shorty-Text--secondary Shorty-Header__slogan"
+  >
+    The link shortener with a long name
+  </span>
+</header>
+`;
