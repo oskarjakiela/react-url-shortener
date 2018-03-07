@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> renders correctly 1`] = `
+<input
+  className="Shorty-Input"
+/>
+`;
+
+exports[`<Input className="foo-bar" /> renders correctly 1`] = `
+<input
+  className="Shorty-Input foo-bar"
+/>
+`;

@@ -1,0 +1,19 @@
+.Shorty-Input {
+  display: inline-block;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 1.125rem;
+  height: 2.625rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  background-color: #eaeaea;
+  color: #555;
+  vertical-align: middle;
+  outline: none;
+
+  &::placeholder {
+    color: #bbb;
+  }
+}
+
