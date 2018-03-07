@@ -28,7 +28,9 @@ exports[`<Logo className="foo-bar" /> renders correctly 1`] = `
 
 exports[`<Logo title="foo-bar" disabled /> renders correctly 1`] = `
 <h1
-  className="Shorty-Logo foo-bar"
+  className="Shorty-Logo"
+  disabled={true}
+  title="foo-bar"
 >
   <a
     href="/"

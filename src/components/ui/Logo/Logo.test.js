@@ -22,7 +22,7 @@ it('<Logo className="foo-bar" /> renders correctly', () => {
 
 it('<Logo title="foo-bar" disabled /> renders correctly', () => {
   const tree = renderer
-    .create(<Logo className="foo-bar">Lorem ipsum</Logo>)
+    .create(<Logo title="foo-bar" disabled>Lorem ipsum</Logo>)
     .toJSON();
 
   expect(tree).toMatchSnapshot();
