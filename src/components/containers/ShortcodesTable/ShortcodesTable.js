@@ -13,7 +13,7 @@ const headers = ['Link', 'Visits', 'Last Visited'];
 
 const mapItemsToRows = (items) => map(({
   lastSeenDate,
-  redirectCount,
+  redirectCount = 0,
   shortcode,
   url,
 }) => {
