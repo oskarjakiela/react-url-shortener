@@ -1,4 +1,5 @@
 import debounce from 'debounce';
+import isUrl from 'is-url';
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -14,7 +15,7 @@ const ShortcodeForm = ({
   onSubmit,
 }) => {
   const debouncedChange = debounce(onChange, 300);
-  const isDisabled = !Boolean(value);
+  const isDisabled = !isUrl(value);
 
   const handleChange = (event) => {
     event.preventDefault();
