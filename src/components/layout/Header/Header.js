@@ -1,4 +1,3 @@
-import classnames from 'classnames';
 import React from 'react';
 
 import './Header.css';
@@ -7,11 +6,8 @@ import { Logo, Text } from 'components/ui';
 
 const displayName = 'Shorty-Header';
 
-const Header = ({
-  className,
-  ...props
-}) => (
-  <header className={classnames(displayName, className)} {...props}>
+const Header = () => (
+  <header className={displayName}>
     <Logo className={`${displayName}__logo`}>
       Shooooort
     </Logo>

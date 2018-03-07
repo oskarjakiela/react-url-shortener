@@ -1,4 +1,3 @@
-import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -9,10 +8,8 @@ const displayName = 'Shorty-Main';
 
 const Main = ({
   children,
-  className,
-  ...props
 }) => (
-  <main className={classnames(displayName, className)} {...props}>
+  <main className={displayName}>
     {children}
   </main>
 );
