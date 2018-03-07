@@ -12,6 +12,22 @@ it('<Text /> renders correctly', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('<Text className="foo-bar" /> renders correctly', () => {
+  const tree = renderer
+    .create(<Text className="foo-bar">Lorem ipsum</Text>)
+    .toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('<Text title="foo-bar" disabled /> renders correctly', () => {
+  const tree = renderer
+    .create(<Text title="foo-bar" disabled>Lorem ipsum</Text>)
+    .toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
 it('<Text primary /> renders correctly', () => {
   const tree = renderer
     .create(<Text primary>Lorem ipsum</Text>)

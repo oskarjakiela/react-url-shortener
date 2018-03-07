@@ -8,6 +8,14 @@ exports[`<Text /> renders correctly 1`] = `
 </span>
 `;
 
+exports[`<Text className="foo-bar" /> renders correctly 1`] = `
+<span
+  className="Shorty-Text Shorty-Text--primary foo-bar"
+>
+  Lorem ipsum
+</span>
+`;
+
 exports[`<Text primary /> renders correctly 1`] = `
 <span
   className="Shorty-Text Shorty-Text--primary"
@@ -19,6 +27,16 @@ exports[`<Text primary /> renders correctly 1`] = `
 exports[`<Text secondary /> renders correctly 1`] = `
 <span
   className="Shorty-Text Shorty-Text--secondary"
+>
+  Lorem ipsum
+</span>
+`;
+
+exports[`<Text title="foo-bar" disabled /> renders correctly 1`] = `
+<span
+  className="Shorty-Text Shorty-Text--primary"
+  disabled={true}
+  title="foo-bar"
 >
   Lorem ipsum
 </span>

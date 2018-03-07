@@ -5,6 +5,7 @@ import React from 'react';
 
 import './Text.css';
 
+
 const displayName = 'Shorty-Text';
 
 const isPrimary = (value) => {
@@ -17,15 +18,22 @@ const isPrimary = (value) => {
 
 const Text = ({
   children,
+  className,
   primary,
   secondary,
   unimportant,
+  ...props,
 }) => (
-  <span className={classnames(displayName, {
-    [`${displayName}--primary`]: isPrimary([primary, secondary, unimportant]),
-    [`${displayName}--secondary`]: secondary,
-    [`${displayName}--unimportant`]: unimportant,
-  })}>{children}</span>
+  <span
+    className={classnames(displayName, {
+      [`${displayName}--primary`]: isPrimary([primary, secondary, unimportant]),
+      [`${displayName}--secondary`]: secondary,
+      [`${displayName}--unimportant`]: unimportant,
+    }, className)}
+    {...props}
+  >
+    {children}
+  </span>
 );
 
 Text.displayName = displayName;
