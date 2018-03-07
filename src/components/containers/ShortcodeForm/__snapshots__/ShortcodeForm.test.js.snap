@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ShortcodeForm /> renders correctly 1`] = `
+<form
+  className="Shorty-ShortcodeForm"
+>
+  <input
+    className="Shorty-Input Shorty-ShortcodeForm__input"
+    placeholder="Paste the link you want to shorten here"
+  />
+  <button
+    className="Shorty-Button Shorty-ShortcodeForm__button Shorty-Button--disabled"
+    disabled={true}
+  >
+    Shorten this link
+  </button>
+</form>
+`;

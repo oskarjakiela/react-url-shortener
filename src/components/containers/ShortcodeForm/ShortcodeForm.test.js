@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import ShortenForm from './ShortenForm';
+import ShortcodeForm from './ShortcodeForm';
 
 
-it('<ShortenForm /> renders correctly', () => {
+it('<ShortcodeForm /> renders correctly', () => {
   const tree = renderer
-    .create(<ShortenForm />)
+    .create(<ShortcodeForm />)
     .toJSON();
 
   expect(tree).toMatchSnapshot();

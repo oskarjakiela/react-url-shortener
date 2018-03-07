@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './ShortenForm.css';
+import './ShortcodeForm.css';
 import { Button, Input } from 'components/ui';
 
 
-const displayName = 'Shorty-ShortenForm';
+const displayName = 'Shorty-ShortcodeForm';
 
-const ShortenForm = () => (
+const ShortcodeForm = () => (
   <form className={displayName}>
     <Input
       className={`${displayName}__input`}
@@ -22,6 +22,6 @@ const ShortenForm = () => (
   </form>
 );
 
-ShortenForm.displayName = displayName;
+ShortcodeForm.displayName = displayName;
 
-export default ShortenForm;
+export default ShortcodeForm;

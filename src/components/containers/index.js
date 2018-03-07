@@ -1,5 +1,5 @@
-import ShortenForm from 'components/containers/ShortenForm/ShortenForm';
+import ShortcodeForm from 'components/containers/ShortcodeForm/ShortcodeForm';
 
 export {
-  ShortenForm,
+  ShortcodeForm,
 };

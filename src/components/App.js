@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import { ShortenForm } from 'components/containers';
+import { ShortcodeForm } from 'components/containers';
 import { Header, Main } from 'components/layout';
 
 
@@ -12,7 +12,7 @@ class App extends Component {
         <Header />
 
         <Main>
-          <ShortenForm />
+          <ShortcodeForm />
         </Main>
       </div>
     );
