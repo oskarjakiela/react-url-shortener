@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import Header from './components/Header';
-import Text from './components/Text';
-
+import { Header, Main } from 'components/layout';
+import { Text } from 'components/ui';
 
 
 const { REACT_APP_API_URL } = process.env;
@@ -14,11 +13,11 @@ class App extends Component {
       <div className="Shorty-App">
         <Header />
 
-        <main className="Shorty-Main">
+        <Main>
           <Text>
             {REACT_APP_API_URL}
           </Text>
-        </main>
+        </Main>
       </div>
     );
   }

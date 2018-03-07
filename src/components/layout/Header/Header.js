@@ -2,8 +2,7 @@ import classnames from 'classnames';
 import React from 'react';
 
 import './Header.css';
-import Logo from './Logo';
-import Text from './Text';
+import { Logo, Text } from 'components/ui';
 
 
 const displayName = 'Shorty-Header';
