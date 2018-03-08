@@ -24,11 +24,15 @@ const ShortcodeForm = ({
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    event.target.reset();
     onSubmit(value);
   };
 
   return (
-    <form className={displayName}>
+    <form
+      className={displayName}
+      onSubmit={handleSubmit}
+    >
       <Input
         className={`${displayName}__input`}
         defaultValue={value}
@@ -39,7 +43,7 @@ const ShortcodeForm = ({
       <Button
         className={`${displayName}__button`}
         disabled={isDisabled}
-        onClick={handleSubmit}
+        type="submit"
       >
         Shorten this link
       </Button>
