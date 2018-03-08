@@ -1,7 +1,7 @@
 import copy from 'copy-to-clipboard';
+import { map } from 'ramda';
 
 import {
-  getShortcode,
   getShortcodeStats,
   postShorten,
 } from 'core/api';
@@ -9,35 +9,36 @@ import {
 
 export const SHORTCODE_CREATE_START = 'SHORTCODE_CREATE_START';
 export const SHORTCODE_CREATE_SUCCESS = 'SHORTCODE_CREATE_SUCCESS';
-export const SHORTCODE_FETCH_START = 'SHORTCODE_FETCH_START';
-export const SHORTCODE_FETCH_SUCCESS = 'SHORTCODE_FETCH_SUCCESS';
 export const SHORTCODE_STAT_FETCH_START = 'SHORTCODE_STAT_FETCH_START';
 export const SHORTCODE_STAT_FETCH_SUCCESS = 'SHORTCODE_STAT_FETCH_SUCCESS';
+export const SHORTCODES_FETCH_START = 'SHORTCODES_FETCH_START';
+export const SHORTCODES_FETCH_SUCCESS = 'SHORTCODES_FETCH_SUCCESS';
 
 export const SHORTCODE_COPY = 'SHORTCODE_COPY';
 export const SHORTCODES_CLEAR = 'SHORTCODES_CLEAR';
 export const NEW_URL_CHANGE = 'NEW_URL_CHANGE';
 
-function fetchShortcodeStart(shortcode) {
+function fetchShortcodesStart(shortcodes) {
   return {
-    type: SHORTCODE_FETCH_START,
-    payload: { shortcode }
+    type: SHORTCODES_FETCH_START,
+    payload: { shortcodes }
   };
 }
 
-function fetchShortcodeSuccess(shortcode, url) {
+function fetchShortcodesSuccess() {
   return {
-    type: SHORTCODE_FETCH_SUCCESS,
-    payload: { shortcode, url }
+    type: SHORTCODES_FETCH_SUCCESS,
   };
 }
 
-export function fetchShortcode(shortcode) {
+export function fetchShortcodes(shortcodes) {
   return dispatch => {
-    dispatch(fetchShortcodeStart(shortcode));
+    dispatch(fetchShortcodesStart(shortcodes));
 
-    return getShortcode(shortcode)
-      .then(({ url }) => dispatch(fetchShortcodeSuccess(shortcode, url)));
+    return Promise.all(map((shortcode) => {
+        return dispatch(fetchShortcodeStat(shortcode));
+      }, shortcodes))
+      .then(() => dispatch(fetchShortcodesSuccess()));
   }
 }
 

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { map, prop } from 'ramda';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
@@ -14,10 +15,17 @@ import {
   clearShortcodes,
   copyShortcode,
   createShortcode,
+  fetchShortcodes,
 } from 'core/actions';
 
 
 class App extends Component {
+  componentDidMount() {
+    const { items, dispatch } = this.props;
+
+    dispatch(fetchShortcodes(map(prop('shortcode'), items)));
+  }
+
   render() {
     const { dispatch, items, newUrl } = this.props;
     const isEmpty = items.length === 0;
