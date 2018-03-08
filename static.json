@@ -10,5 +10,8 @@
     "/api/": {
       "origin": "${REACT_APP_API_URL}"
     }
+  },
+  "routes": {
+    "/**": "index.html"
   }
 }
